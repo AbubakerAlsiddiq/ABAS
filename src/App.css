@@ -1,0 +1,203 @@
+:root {
+  /* Color System - Inspired by Sudan's cultural heritage and landscapes */
+  --color-primary: #c73e34; /* Rich red from Sudanese flag and traditional textiles */
+  --color-primary-light: #d85a51;
+  --color-primary-dark: #a32e26;
+
+  --color-secondary: #0f513b; /* Deep green from the Nile's vegetation */
+  --color-secondary-light: #1a6b4f;
+  --color-secondary-dark: #0a3827;
+
+  --color-accent: #d4af37; /* Gold from traditional Sudanese jewelry */
+  --color-accent-light: #e0c158;
+  --color-accent-dark: #b39127;
+
+  --color-desert: #daa270; /* Sudanese desert sand */
+  --color-desert-light: #e5b98d;
+  --color-desert-dark: #c68b53;
+
+  --color-nile: #1f4e8c; /* Deep blue from the Nile River */
+  --color-nile-light: #2a69b8;
+  --color-nile-dark: #163860;
+
+  /* Neutral Colors - Inspired by traditional mud-brick architecture */
+  --color-black: #231f20;
+  --color-white: #f9f6f0; /* Warm white from traditional fabrics */
+  --color-clay-100: #f5efe6;
+  --color-clay-200: #e8e0d5;
+  --color-clay-300: #d6cab9;
+  --color-clay-400: #c0b2a1;
+  --color-clay-500: #a69883;
+  --color-clay-600: #8c7e69;
+  --color-clay-700: #726552;
+  --color-clay-800: #574d3e;
+  --color-clay-900: #3c352b;
+
+  /* Functional Colors */
+  --color-success: var(--color-secondary);
+  --color-warning: var(--color-accent);
+  --color-error: var(--color-primary);
+  --color-info: var(--color-nile);
+
+  /* Text Colors */
+  --text-primary: var(--color-clay-900);
+  --text-secondary: var(--color-clay-700);
+  --text-tertiary: var(--color-clay-500);
+  --text-inverse: var(--color-white);
+
+  /* Background Colors */
+  --background-primary: var(--color-white);
+  --background-secondary: var(--color-clay-100);
+  --background-tertiary: var(--color-clay-200);
+
+  /* Border Colors */
+  --border-color: var(--color-clay-300);
+  --border-color-focus: var(--color-primary);
+
+  /* Typography */
+  --font-family-primary: "Amiri", "Noto Sans", -apple-system, BlinkMacSystemFont,
+    "Segoe UI", Roboto, serif; /* Amiri font for elegant Arabic-inspired typography */
+  --font-family-arabic: "Amiri", "Noto Naskh Arabic", sans-serif;
+  --font-family-decorative: "Aref Ruqaa", serif; /* For decorative headings */
+
+  /* Font Sizes - Slightly larger for better readability */
+  --font-size-xs: 0.8125rem; /* 13px */
+  --font-size-sm: 0.9375rem; /* 15px */
+  --font-size-base: 1.0625rem; /* 17px */
+  --font-size-lg: 1.1875rem; /* 19px */
+  --font-size-xl: 1.375rem; /* 22px */
+  --font-size-2xl: 1.75rem; /* 28px */
+  --font-size-3xl: 2.125rem; /* 34px */
+  --font-size-4xl: 2.75rem; /* 44px */
+
+  /* Font Weights - Adjusted for Arabic-inspired typography */
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+
+  /* Line Heights - Adjusted for better Arabic script compatibility */
+  --line-height-tight: 1.3;
+  --line-height-base: 1.6;
+  --line-height-relaxed: 1.85;
+
+  /* Spacing System - Based on traditional Islamic geometric patterns */
+  --spacing-1: 0.25rem; /* 4px */
+  --spacing-2: 0.5rem; /* 8px */
+  --spacing-3: 0.875rem; /* 14px */
+  --spacing-4: 1.125rem; /* 18px */
+  --spacing-5: 1.5rem; /* 24px */
+  --spacing-6: 2rem; /* 32px */
+  --spacing-8: 2.5rem; /* 40px */
+  --spacing-10: 3.25rem; /* 52px */
+  --spacing-12: 4rem; /* 64px */
+  --spacing-16: 5rem; /* 80px */
+
+  /* Border Radius - Softer edges inspired by traditional architecture */
+  --radius-sm: 0.1875rem; /* 3px */
+  --radius-base: 0.3125rem; /* 5px */
+  --radius-md: 0.5rem; /* 8px */
+  --radius-lg: 0.75rem; /* 12px */
+  --radius-xl: 1rem; /* 16px */
+  --radius-full: 9999px;
+
+  /* Shadows - Warmer tones for shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(60, 53, 43, 0.05);
+  --shadow-base: 0 1px 3px 0 rgba(60, 53, 43, 0.1),
+    0 1px 2px -1px rgba(60, 53, 43, 0.1);
+  --shadow-md: 0 4px 6px -1px rgba(60, 53, 43, 0.1),
+    0 2px 4px -2px rgba(60, 53, 43, 0.1);
+  --shadow-lg: 0 10px 15px -3px rgba(60, 53, 43, 0.1),
+    0 4px 6px -4px rgba(60, 53, 43, 0.1);
+  --shadow-xl: 0 20px 25px -5px rgba(60, 53, 43, 0.1),
+    0 8px 10px -6px rgba(60, 53, 43, 0.1);
+
+  /* Layout */
+  --container-max-width: 1280px;
+  --header-height: 75px;
+  --footer-height: 420px;
+
+  /* Z-index */
+  --z-negative: -1;
+  --z-elevate: 1;
+  --z-sticky: 100;
+  --z-drawer: 200;
+  --z-dropdown: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+
+  /* Transitions */
+  --transition-base: 220ms ease-in-out;
+  --transition-slow: 320ms ease-in-out;
+  --transition-fast: 160ms ease-in-out;
+
+  /* Focus Ring */
+  --focus-ring: 0 0 0 3px rgba(199, 62, 52, 0.2); /* Primary color with opacity */
+}
+
+/* Global Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-family-primary);
+  color: var(--text-primary);
+  background-color: var(--background-primary);
+  line-height: var(--line-height-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Enhancements */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-decorative);
+  font-weight: var(--font-weight-bold);
+  line-height: var(--line-height-tight);
+  color: var(--text-primary);
+}
+
+/* Utility Classes */
+.rtl {
+  direction: rtl;
+  font-family: var(--font-family-arabic);
+}
+
+.container {
+  max-width: var(--container-max-width);
+  margin: 0 auto;
+  padding: 0 var(--spacing-4);
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 640px) {
+  :root {
+    --container-max-width: 100%;
+    /* Adjust font sizes for mobile */
+    --font-size-4xl: 2.25rem;
+    --font-size-3xl: 1.875rem;
+    --font-size-2xl: 1.5rem;
+    /* Adjust spacing for mobile */
+    --spacing-16: 4rem;
+    --spacing-12: 3rem;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  :root {
+    --container-max-width: 960px;
+  }
+}
+
+@media (min-width: 1025px) {
+  :root {
+    --container-max-width: 1280px;
+  }
+}
